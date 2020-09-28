@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Word</title>
+    <style>body {
+        min-width: 400px; /* your desired width */
+        max-width: 100%;
+        min-height: 150px;
+        position: relative;
+        vertical-align:middle;
+      }
+      </style>
+      <script type="text/javascript">
+   function example_popup() {
+    var w = window.open('', '', 'width=400,height=400,resizeable,scrollbars');
+    w.document.write(document.getElementById('example_text').value);
+    w.document.close(); // needed for chrome and safari
+}
+</script>
+</head>
+<body>
+    <h1>Click to get a new word</h1>
+    <form>
+        <input type="text" id="example_text" size="50" value="This is some test content" /><br />
+        <input type="button" value="generate" onclick="example_popup()" />
+    </form>
+</body>
+</html>

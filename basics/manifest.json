@@ -11,10 +11,17 @@
             ],
             "js":
             [
-                "content.js"
+              "word.js"
             ]
         }
 
-    ]
+    ],
+    "browser_action":{
+        "default_icon":"1.png",
+        "default_popup":"popup.html",
+        "default_title":"New Word"
+        
+    }
+    
 
 }
